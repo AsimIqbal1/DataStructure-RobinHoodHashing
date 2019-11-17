@@ -1,0 +1,6 @@
+# Data Structure Robin Hood Hashing
+
+Robinhood hashing is well known and accurate because it reduces the collision and improves space complexity. It’s a method to avoid collisions and arrange the element with less space complexity. It simply give a formula to maintain load factor which directly affect the space complexity and no linked list and extra pointers needed  .
+	
+The main theme of Robinhood Hashing is when you probe for a position to insert a new data, if the probe size for the existing element is less than the current inserting probe length so it  swap the two elements and keep going. What this will do is, the elements inserted early will gradually move right to make space for the item collided whose probe value will be greater to that of a non-collided item (whose probe value will be zero). Through this technique Robin Hood Hashing not only acquires a great time complexity but also manages to attain a very high load factor approx. 0.9 which is much greater than 0.78 which is the case in linear probing. Meaning Robin Hood Hashing is also a space efficient algorithm.
+Another  feature comes with Robin Hood Hashing is that if a good hashing algorithm is used in most of the cases the maximum probe length of any value doesn’t exceeds six that is a maximum of six comparisons the value is found in a hash array implemented via Robin Hood Hashing.
